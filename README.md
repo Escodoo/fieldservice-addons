@@ -1,2 +1,2 @@
 # fieldservice-addons
-Addons par OCA/field-serice
+Addons par OCA/field-service
