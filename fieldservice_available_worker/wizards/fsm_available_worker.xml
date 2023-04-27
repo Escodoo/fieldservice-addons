@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record model="ir.ui.view" id="fsm_available_worker_form_view">
+        <field
+            name="name"
+        >fsm.available.worker.form (in fieldservice_available_worker)</field>
+        <field name="model">fsm.available.worker</field>
+        <field name="arch" type="xml">
+            <form string="Fsm Available Worker">
+                <group>
+                    <field name="skill_ids" widget="many2many_tags" />
+                    <field name="category_ids" widget="many2many_tags" />
+                    <field name="calendar_id" />
+                    <field name="territory_id" />
+                    <field name="start_datetime" />
+                    <field name="stop_datetime" />
+                </group>
+                <footer>
+                    <button
+                        name="doit"
+                        string="Search"
+                        class="btn-primary"
+                        type="object"
+                    />
+                    <button
+                        string="Cancel"
+                        class="btn-default"
+                        special="cancel"
+                    />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="fsm_available_worker_act_window">
+        <field name="name">Search Available Worker</field>
+        <field name="res_model">fsm.available.worker</field>
+        <field name="view_mode">form</field>
+        <field name="context">{}</field>
+        <field name="target">new</field>
+    </record>
+
+<!--    <record model="ir.values" id="fsm_available_worker_act_multi">-->
+<!--        <field name="name">Fsm Available Worker</field> &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        <field name="key2">client_action_multi</field>-->
+<!--        <field name="value" eval="'ir.actions.act_window,' +str(ref('fsm_available_worker_act_window'))" />-->
+<!--        <field name="model">source.model</field> &lt;!&ndash; TODO &ndash;&gt;-->
+<!--    </record>-->
+
+    <record model="ir.ui.menu" id="fsm_available_worker_menu">
+        <field name="name">Search Available Worker</field>
+        <field name="parent_id" ref="fieldservice.reporting" />
+        <field name="action" ref="fsm_available_worker_act_window" />
+        <field name="sequence" eval="16" /> <!-- TODO -->
+    </record>
+</odoo>
