@@ -1,0 +1,116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_available_worker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
+"Language: pt_BR\n"
+
+#. module: fieldservice_available_worker
+#: code:addons/fieldservice_available_worker/wizards/fsm_available_worker.py:83
+#, python-format
+msgid "Available Workers"
+msgstr "Trabalhadores Disponíveis"
+
+#. module: fieldservice_available_worker
+#: model_terms:ir.ui.view,arch_db:fieldservice_available_worker.fsm_available_worker_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__category_ids
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__display_name
+msgid "Display Name"
+msgstr "Nome de Exibição"
+
+#. module: fieldservice_available_worker
+#: model_terms:ir.ui.view,arch_db:fieldservice_available_worker.fsm_available_worker_form_view
+msgid "Fsm Available Worker"
+msgstr "Fsm Trabalhador Disponível"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__id
+msgid "ID"
+msgstr "ID"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__skill_ids
+msgid "Required Skills"
+msgstr "Habilidades Necessárias"
+
+#. module: fieldservice_available_worker
+#: model_terms:ir.ui.view,arch_db:fieldservice_available_worker.fsm_available_worker_form_view
+msgid "Search"
+msgstr "Pesquisar"
+
+#. module: fieldservice_available_worker
+#: model:ir.actions.act_window,name:fieldservice_available_worker.fsm_available_worker_act_window
+#: model:ir.ui.menu,name:fieldservice_available_worker.fsm_available_worker_menu
+msgid "Search Available Worker"
+msgstr "Pesquisar Trabalhador Disponível"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__start_datetime
+msgid "Start Date"
+msgstr "Data Início"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__stop_datetime
+msgid "Stop Date"
+msgstr "Data Final"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__territory_id
+msgid "Territory"
+msgstr "Território"
+
+#. module: fieldservice_available_worker
+#: model:ir.model.fields,field_description:fieldservice_available_worker.field_fsm_available_worker__calendar_id
+msgid "Working Schedules"
+msgstr "Horários de Trabalho"
+
+#. module: fieldservice_available_worker
+#: model:ir.model,name:fieldservice_available_worker.model_fsm_available_worker
+#, fuzzy
+msgid "fsm.available.worker"
+msgstr "fsm.available.worker"
