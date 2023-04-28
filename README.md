@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[fieldservice_available_worker](fieldservice_available_worker/) | 12.0.1.0.0 |  | Field Service Available Worker
 [fieldservice_project_domain_filter_project_tasks](fieldservice_project_domain_filter_project_tasks/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Add domain on task to filter only project tasks
 
 [//]: # (end addons)
