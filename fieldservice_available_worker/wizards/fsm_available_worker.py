@@ -2,16 +2,17 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 # -*- coding: utf-8 -*-
-from odoo import _, api, fields, models
+from odoo import _, fields, models
 
 
 class FsmAvailableWorker(models.TransientModel):
     _name = "fsm.available.worker"
+    _description = "FSM available worker"
 
     skill_ids = fields.Many2many("hr.skill", string="Required Skills")
     category_ids = fields.Many2many("fsm.category", string="Categories")
     calendar_id = fields.Many2one("resource.calendar", string="Working Schedules")
-    territory_id = fields.Many2one("fsm.territory", string="Territory")
+    territory_id = fields.Many2one("res.territory", string="Territory")
     start_datetime = fields.Datetime("Start Date")
     stop_datetime = fields.Datetime("Stop Date")
 
@@ -66,7 +67,6 @@ class FsmAvailableWorker(models.TransientModel):
 
         return available_workers
 
-    @api.multi
     def doit(self):
         self.ensure_one()
         available_workers = self._get_available_workers(
